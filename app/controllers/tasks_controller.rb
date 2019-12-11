@@ -1,4 +1,4 @@
-class TasksController < ProtectedController
+class TasksController < ApplicationController
   before_action :set_task, only: [:show, :update, :destroy]
 
   # GET /tasks
@@ -46,6 +46,6 @@ class TasksController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def task_params
-      params.require(:task).permit(:title, :description, :deadline)
+      params.require(:task).permit(:title, :description, :deadline, :user_id)
     end
 end

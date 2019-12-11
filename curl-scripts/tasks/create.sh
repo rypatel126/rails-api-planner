@@ -9,7 +9,8 @@ curl "http://localhost:4741/tasks" \
     "task": {
       "title": "'"${TITLE}"'",
       "description": "'"${DESCRIPTION}"'",
-      "deadline": "'"${DEADLINE}"'"
+      "deadline": "'"${DEADLINE}"'",
+      "user_id": "'"${USER_ID}"'"
     }
   }'
 
