@@ -9,9 +9,13 @@ curl "http://localhost:4741/tasks" \
     "task": {
       "title": "'"${TITLE}"'",
       "description": "'"${DESCRIPTION}"'",
-      "deadline": "'"${DEADLINE}"'",
-      "user_id": "'"${USER_ID}"'"
+      "deadline": "'"${DEADLINE}"'"
     }
   }'
 
 echo
+
+
+# "user_id": "'"${USER_ID}"'"
+
+# --header "Authorization: Token token=${TOKEN}" \
